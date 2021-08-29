@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Niconne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
+
+body {
+  animation-name: backgroundColorPalette;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  background-color: rgb(58, 57, 57);
+  margin:0px;
+  padding: 0px;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+.breweries
+{
+  /* animation-name: backgroundColorPalette;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate; */
+  /* background-color: rgb(58, 57, 57); */
+  min-width: 5rem;
+  height: 10rem;
+  text-align: center;
+  margin-bottom: 0px;
+ 
+  
+
+}
+
+.main
+{
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+  background-image: url(https://media.istockphoto.com/photos/beer-overflowing-large-glass-with-foam-and-bubbles-isolated-picture-id614150478?b=1&k=6&m=614150478&s=612x612&w=0&h=Kv6_UUqqaW6ouQW1xJ-vBuNY_cA4nEjLVL1gyHDq2bk= );
+  background-size: cover;
+  overflow: hidden;
+
+  /* background-repeat: no-repeat; */
+}
+
+@keyframes flicker {
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+  color: #fff;
+  text-shadow:
+    0 0 7px rgb(4, 131, 36),
+    0 0 10px rgb(4, 131, 36),
+    0 0 21px rgb(4, 131, 36),
+    0 0 42px rgb(4, 66, 46),
+    0 0 82px rgb(4, 66, 46),
+    0 0 92px rgb(4, 66, 46),
+    0 0 102px rgb(4, 66, 46),
+    0 0 151px rgb(4, 66, 46);
+  }20%, 24%, 55% {       
+    text-shadow: none;
+  }
+}
+
+  .neontext
+  {
+    animation: flicker 1.5s infinite alternate; 
+    font-family: 'Rampart One', cursive;
+    font-size: 6rem;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    min-width: 3rem;
+    text-align: center;
+    display: inline;
+    width: 100%;
+  }
+
+
+
+.beer
+{
+  height: 8rem;
+
+}
+
+h3
+{
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  margin-bottom: 10px;
+
+  
+}
+
+.website a
+{
+  text-decoration: none;
+}
+
+a:link
+{
+  color: blue;;
+}
+
+a:visited
+{
+  color:red;
+}
+
+a:hover
+{
+  color: black;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+
+
+@keyframes backgroundColorPalette {
+  0% {
+    background: gray;
+  }
+  25% {
+    background: black;
+  }
+  50% {
+    background: #606e59;
+  }
+  75% {
+    background: #2b1e01;
+  }
+  100% {
+    background: #4e423f;
+  }
+}
+
+.s
+{
+  display: flex;
+  width: 100;
+  flex-wrap: wrap;
+  gap:1rem;
+  justify-content:space-evenly;
+  align-content: center;
+  margin-top: 2rem;
+}
+
+.container
+{
+    padding:6px;
+     
+    width: 22rem;
+  border-radius:10px;
+  box-shadow:0px 4px 8px 0px rgba(0,0,0,0.2);
+  text-align: center;
+    margin-right:16px;
+    margin-left: 16px;
+    margin-top:5px;
+    transition:transform 0.3s;
+  overflow:hidden; 
+  min-height: 10rem;
+  vertical-align: middle;
+}
+
+.p
+{
+    margin-top: 2px;
+    margin-bottom: 5px;
+}
+.t
+{
+  margin-top: 2px;
+    margin-bottom: 5px;
+}
+.cs
+{
+  margin-top: 3px;
+  margin-bottom: 13px;
+}
+
+.htop
+{
+  font-size: 1.5rem;
+}
+
+.htop:hover
+{
+  color: aliceblue;
+}
+
+.container > div
+{
+  font-family: 'Niconne', cursive;
+  font-size: 20px;
+}
+
+.container:hover
+{
+    /* cursor:pointer; */
+  transform: scale(1.06); 
+  
+  color:rgb(189, 5, 42);
+  box-shadow: 0 6px 10px 0 rgba(0,0,0,0.5);
+}
+
+.site 
+{
+ margin-top: 2px;
+ margin-bottom: 5px;
+}
+.back
+{
+  height: 2.5rem;
+  border-radius: 5rem;
+}
+
+.gif
+{
+  height: 5rem;
+  text-align: center;
+}
+.bgif
+{
+  height: 4rem;
+ 
+}
+
+.nav
+{
+  position: relative;
+  bottom: 0px;
+  text-align: right;
+  height: 3rem;
+  
+}
+
+
+@media (max-width: 550px) {
+
+  .breweries
+  {
+  width: 100%;
+  height: 5rem;
+  padding: 0px;
+  margin-bottom: 2px;
+  vertical-align: middle;
+  }
+
+  .gif
+  {
+    width: 100%;
+
+  }
+
+  .main
+  {
+    
+  }
+
+  body
+  {
+    margin: 0px;
+  }
+
+  .neontext
+  {
+    font-size: 3rem;
+    /* margin-top: 2rem; */
+  }
+  
+  }
